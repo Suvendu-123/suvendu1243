@@ -17,7 +17,7 @@ public class Login
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.gmail.com");
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.findElement(By.id("identifierId")).sendKeys("suvendu.nath12@gmail.com",Keys.ENTER);	
 		driver.findElement(By.name("password")).sendKeys("Maatarini123",Keys.ENTER);
 	}
